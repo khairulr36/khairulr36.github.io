@@ -1,0 +1,159 @@
+body {
+  z-index: 1;
+  background: linear-gradient(
+    -45deg,
+    red,
+    rgb(0, 121, 0),
+    rgb(64, 64, 204),
+    rgb(199, 199, 0)
+  );
+  background-size: 400% 400%;
+  width: 100%;
+  height: 100vh;
+  animation: animate 15s ease infinite;
+  background-attachment: fixed;
+}
+
+main {
+  min-height: calc(100vh - 120px - 58px);
+}
+
+.nav-link {
+  color: white !important;
+  border-radius: 10px;
+  margin: 0px 10px;
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: black !important;
+}
+
+.Content {
+  margin-top: 100px;
+}
+
+.about {
+  margin-top: 100px;
+}
+
+.container {
+  width: 60%;
+}
+
+.deskripsi {
+  display: block;
+  margin: auto;
+}
+
+.tes {
+  text-decoration: none;
+  color: white;
+  margin: 0px 5px;
+  font-size: 25px;
+}
+
+.tes:hover {
+  font-size: 30px;
+}
+
+p {
+  color: white;
+}
+
+.garis {
+  border: 2px solid white;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fotosaya {
+  border-radius: 30% !important;
+  float: right;
+}
+
+.card {
+  width: 80%;
+  margin: auto;
+  border-radius: 20px;
+  border: 0px solid black;
+  background-color: transparent;
+}
+
+.card-img-top {
+  /* border-radius: 20px 20px 0px 0px; */
+  border-radius: 20px;
+}
+
+.card-text {
+  /* color: black; */
+  text-align: justify;
+}
+
+.putih {
+  color: white;
+}
+
+#bagiankontak {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexkontak {
+  /* Jika Anda ingin menengahkan elemen di dalam .d-flex */
+  display: flex;
+  justify-content: center;
+}
+
+/* .footerCopy {
+  color: black;
+  display: block;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px 10px 0px 0px;
+  padding: 2px 0px;
+} */
+
+@keyframes animate {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .container {
+    width: 80%;
+  }
+
+  .col.gambar {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .fotosaya {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 200px; /* Optional: To ensure the image doesn't exceed its original size */
+  }
+  .garis {
+    width: 70%;
+  }
+
+  .cardres {
+    display: block;
+    width: 100%;
+  }
+}
