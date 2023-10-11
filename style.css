@@ -147,12 +147,13 @@ p {
   .col.gambar {
     text-align: center;
     margin-top: 50px;
+    justify-content: center;
   }
 
   .fotosaya {
     display: block;
-    margin-right: auto;
-    margin-left: auto;
+    float: left;
+    margin-left: 20%;
     max-width: 200px; /* Optional: To ensure the image doesn't exceed its original size */
   }
   .garis {
