@@ -2,75 +2,472 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio Khairul</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    <link rel="icon" type="image/png" href="img/irul.png" sizes="16x16" />
+    <link rel="stylesheet" href="style.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("0LG4rL8dm8I_jeT2e");
+        })();
+    </script>
+
 </head>
 
 <body>
-  <!-- Ini Navbar -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-          <div class="navbar-nav ">
-            <a class="nav-link fw-bold" aria-current="page" href="index.html">Home</a>
-            <a class="nav-link fw-bold" href="porto.html">Portofolio</a>
-            <a class="nav-link fw-bold" href="kontak.html">Contact</a>
-          </div>
+    <!-- header site -->
+    <header>
+        <div class="logo">
+            <span>Kha</span>irul
         </div>
-      </div>
-    </nav>
-  </header>
+        <ul class="navlist">
+            <li><a href="#home" style="--i:1;">Home</a></li>
+            <li><a href="#about" style="--i:2;">About</a></li>
+            <li><a href="#services" style="--i:3;">Services</a></li>
+            <li><a href="#skills" style="--i:4;">Skills</a></li>
+            <li><a href="#portofolio" style="--i:5;">Portfolio</a></li>
+            <li><a href="#contact" style="--i:6;">Contact</a></li>
+        </ul>
+        <div id="menu-icon" class="bx bx-menu"></div>
 
-  <!-- ini -->
-  <main class="Content">
-    <div class="container">
-      <div class="row" id="atas">
-        <div class="col deskripsi">
-          <p class="h1 fw-bold nama">Khairul Rohman</p>
-          <p>Data Analys, Data Science, Machine Learning</p>
-          <div class="d-flex">
-            <a href="https://github.com/khairulr36?tab=repositories" class="tes"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/khairulr36/" class="tes"><i class="bi bi-linkedin"></i></a>
-            <a href="https://www.youtube.com/@katechchannel8022" class="tes"><i class="bi bi-youtube"></i></a>
-            <a href="https://drive.google.com/file/d/14rmb3hPcAwTdBDVV7tGohJqWU40ulr77/view?usp=sharing"
-              class="tes fw-bold">CV <i class="bi bi-file-earmark-arrow-down"></i></a>
+    </header>
 
-          </div>
+    <!-- home section -->
+    <section id="home" class="home">
+        <div class="home-content scroll-scale">
+            <h1>Hi! I'm Khairul Rohman</h1>
+            <div class="change-text">
+                <h3>And I'm</h3>
+                <h3>
+                    <span class="word"></span><br>
+                </h3>
+            </div>
+
+
+
+            <div class="info-box">
+                <div class="email-info">
+                    <h5>Email :</h5>
+                    <a href="mailto:khairulr36@gmail.com"><span>khairulr36@gmail.com</span></a>
+                </div>
+                <div class="linkedin-info">
+                    <h5>Linkedin :</h5>
+                    <a href="linkedin.com/in/khairulr36"><span>linkedin.com/in/khairulr36</span></a>
+                </div>
+            </div>
+
+            <div class="btn-box">
+                <a href="https://drive.google.com/file/d/14rmb3hPcAwTdBDVV7tGohJqWU40ulr77/view?usp=sharing" id="cv"
+                    class="btn">Download Cv</a>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://github.com/khairulr36"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/khairulr36/"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.youtube.com/@katechchannel8022"><i class='bx bxl-youtube'></i></a>
+                <a href="hlinkedin.com/in/khairulr36"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
         </div>
-        <div class="col gambar">
-          <img src="Asset/full.jpg" alt="Khairul" width="250px" class="fotosaya">
+
+        <div class="home-image scroll-scale">
+            <div class="img-box">
+                <img src="img/irul.png" alt="">
+            </div>
+            <div class="liquid-shape">
+                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="100%" id="blobSvg">
+                    <path fill="#12f7ff">
+                        <animate attributeName="d" dur="20000ms" repeatCount="indefinite" values="M433.5,293Q400,336,365.5,363.5Q331,391,290.5,415Q250,439,207.5,418Q165,397,130,368.5Q95,340,62.5,295Q30,250,72.5,211Q115,172,136.5,131.5Q158,91,204,84Q250,77,293.5,88.5Q337,100,356,139Q375,178,421,214Q467,250,433.5,293Z;
+
+                        M414.5,292.5Q397,335,364,363Q331,391,290.5,402Q250,413,192.5,431.5Q135,450,123,390Q111,330,83,290Q55,250,74.5,205Q94,160,118.5,112.5Q143,65,196.5,41.5Q250,18,304,40Q358,62,379.5,112.5Q401,163,416.5,206.5Q432,250,414.5,292.5Z;
+
+                        M469.5,307.5Q449,365,400,394.5Q351,424,300.5,450.5Q250,477,197,455.5Q144,434,122,385.5Q100,337,59.5,293.5Q19,250,36,193Q53,136,100.5,104.5Q148,73,199,84.5Q250,96,293,98Q336,100,371,130Q406,160,448,205Q490,250,469.5,307.5Z;
+
+                        M457.5,309.5Q457,369,415.5,416.5Q374,464,312,438Q250,412,191,433Q132,454,84,413.5Q36,373,59.5,311.5Q83,250,60.5,188.5Q38,127,89.5,93.5Q141,60,195.5,63Q250,66,296.5,77.5Q343,89,368,128Q393,167,425.5,208.5Q458,250,457.5,309.5Z;
+
+                        M430.5,291Q392,332,370,376Q348,420,299,450.5Q250,481,206,442Q162,403,105,385Q48,367,34,308.5Q20,250,58.5,205.5Q97,161,127,124.5Q157,88,203.5,92Q250,96,296.5,92.5Q343,89,402,108.5Q461,128,465,189Q469,250,430.5,291Z;
+
+                        M445.5,307Q448,364,410,412.5Q372,461,311,455.5Q250,450,210.5,418.5Q171,387,119,371.5Q67,356,54,303Q41,250,72,207.5Q103,165,122,112.5Q141,60,195.5,61Q250,62,309,53.5Q368,45,396.5,97Q425,149,434,199.5Q443,250,445.5,307Z;
+
+                        M437,298Q416,346,385.5,389Q355,432,302.5,456.5Q250,481,193.5,463Q137,445,112,394.5Q87,344,82,297Q77,250,81.5,202.5Q86,155,111,103.5Q136,52,193,46.5Q250,41,303.5,53Q357,65,400,102Q443,139,450.5,194.5Q458,250,437,298Z;
+
+                        M433.5,293Q400,336,365.5,363.5Q331,391,290.5,415Q250,439,207.5,418Q165,397,130,368.5Q95,340,62.5,295Q30,250,72.5,211Q115,172,136.5,131.5Q158,91,204,84Q250,77,293.5,88.5Q337,100,356,139Q375,178,421,214Q467,250,433.5,293Z;
+                        "></animate>
+                    </path>
+                </svg>
+            </div>
+
+            <div class="liquid-shape">
+                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="100%" id="blobSvg">
+                    <path fill="#12f7ff">
+                        <animate attributeName="d" dur="20000ms" repeatCount="indefinite" values="M433.5,293Q400,336,365.5,363.5Q331,391,290.5,415Q250,439,207.5,418Q165,397,130,368.5Q95,340,62.5,295Q30,250,72.5,211Q115,172,136.5,131.5Q158,91,204,84Q250,77,293.5,88.5Q337,100,356,139Q375,178,421,214Q467,250,433.5,293Z;
+
+                        M414.5,292.5Q397,335,364,363Q331,391,290.5,402Q250,413,192.5,431.5Q135,450,123,390Q111,330,83,290Q55,250,74.5,205Q94,160,118.5,112.5Q143,65,196.5,41.5Q250,18,304,40Q358,62,379.5,112.5Q401,163,416.5,206.5Q432,250,414.5,292.5Z;
+
+                        M469.5,307.5Q449,365,400,394.5Q351,424,300.5,450.5Q250,477,197,455.5Q144,434,122,385.5Q100,337,59.5,293.5Q19,250,36,193Q53,136,100.5,104.5Q148,73,199,84.5Q250,96,293,98Q336,100,371,130Q406,160,448,205Q490,250,469.5,307.5Z;
+
+                        M457.5,309.5Q457,369,415.5,416.5Q374,464,312,438Q250,412,191,433Q132,454,84,413.5Q36,373,59.5,311.5Q83,250,60.5,188.5Q38,127,89.5,93.5Q141,60,195.5,63Q250,66,296.5,77.5Q343,89,368,128Q393,167,425.5,208.5Q458,250,457.5,309.5Z;
+
+                        M430.5,291Q392,332,370,376Q348,420,299,450.5Q250,481,206,442Q162,403,105,385Q48,367,34,308.5Q20,250,58.5,205.5Q97,161,127,124.5Q157,88,203.5,92Q250,96,296.5,92.5Q343,89,402,108.5Q461,128,465,189Q469,250,430.5,291Z;
+
+                        M445.5,307Q448,364,410,412.5Q372,461,311,455.5Q250,450,210.5,418.5Q171,387,119,371.5Q67,356,54,303Q41,250,72,207.5Q103,165,122,112.5Q141,60,195.5,61Q250,62,309,53.5Q368,45,396.5,97Q425,149,434,199.5Q443,250,445.5,307Z;
+
+                        M437,298Q416,346,385.5,389Q355,432,302.5,456.5Q250,481,193.5,463Q137,445,112,394.5Q87,344,82,297Q77,250,81.5,202.5Q86,155,111,103.5Q136,52,193,46.5Q250,41,303.5,53Q357,65,400,102Q443,139,450.5,194.5Q458,250,437,298Z;
+
+                        M433.5,293Q400,336,365.5,363.5Q331,391,290.5,415Q250,439,207.5,418Q165,397,130,368.5Q95,340,62.5,295Q30,250,72.5,211Q115,172,136.5,131.5Q158,91,204,84Q250,77,293.5,88.5Q337,100,356,139Q375,178,421,214Q467,250,433.5,293Z;
+                        "></animate>
+                    </path>
+                </svg>
+            </div>
         </div>
-      </div>
 
-      <!-- About Me -->
-      <p class="h5 fw-bold text-center about">A Little About Me</p>
-      <hr class="garis">
-      <p>I am a student of AMIKOM University Yogyakarta. I have an interest in data analyst, data science, and machine
-        learning. The portfolio that I have worked on will be displayed below.
-      </p>
+    </section>
 
-    </div>
+    <!-- about section -->
+    <section id="about" class="about">
+        <!-- <div class="img-about scroll-scale">
+            <img src="img/ai2.png" alt="">
+            <div class="info-about1">
+                <span>2+</span>
+                <p>Years of Experience</p>
+            </div>
+            <div class="info-about2">
+                <span>10+</span>
+                <p>Project Complete</p>
+            </div>
+            <div class="info-about3">
+                <span>100+</span>
+                <p>Happy Cionts</p>
+            </div>
+        </div> -->
 
-  </main>
+        <div class="about-content scroll-scale">
+            <span>Let me introduce myself</span>
+            <h2>About Me</h2>
+            <h3>Reliable AI Developer for Various Image Detection Projects with Implementation Real...</h3>
+            <p>
+                As a machine learning developer or AI Developer whose main focus is on image classification detection
+                and classification. image classification detection, I have the skills to analyze what should be required
+                for the classification projects and their applications.
+                <label id="more">
+                    With the acceleration of technology, I prioritize building a model that is efficient and can be used
+                    on a mass scale. In addition to developing models, I am also able to visualize the data received to
+                    get insights for consideration to determine decisions. On one occasion I was also able to work on a
+                    simple web development that has been using the MVC concept and combine it with the model that has
+                    been created.
+                </label>
+            </p>
+
+            <div class="btn-box">
+                <button class="btn" id="more2">Read More!</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- services section -->
+    <section id="services" class="services">
+        <div class="main-text scroll-scale">
+            <span>what i will do for you</span>
+            <h2>Our Services</h2>
+        </div>
+
+        <div class="section-services scroll-bottom">
+            <div class="service-box">
+                <div class="service-icon">
+                    <i class="bi bi-display"></i>
+                </div>
+                <h3>Web Designer</h3>
+                <p>
+                    I am able to create an attractive web design according to your website needs. Combining visual
+                    aspects with user experience that is contained in the UI / UX concept.
+                </p>
+            </div>
+
+            <div class="service-box">
+                <div class="service-icon">
+                    <i class="bi bi-robot"></i>
+                </div>
+                <h3><span style="color: #12f7ff;">AI</span> Developer</h3>
+                <p>
+                    I am able to manage data provided by clients to support decision making. Data can come from
+                    well-organized data or random data and then a model will be created that can be used continuously.
+                </p>
+            </div>
+
+            <div class="service-box">
+                <div class="service-icon">
+                    <i class="bi bi-code-slash"></i>
+                </div>
+                <h3>Web Developer</h3>
+                <p>
+                    I am capable of static and dynamic web development using several elements such as HTML, CSS, JS, and
+                    PHP. Creating web applications using the concept of mvc to make the code more efficient.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- skill section -->
+    <section id="skills" class="skills">
+        <div class="main-text scroll-scale">
+            <span>technical and professional</span>
+            <h2>My Skills</h2>
+        </div>
+
+        <div class="skill-main">
+            <div class="skill-left scroll-scale">
+                <h3>Technical Skills</h3>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>Figma</p>
+                        <p>90%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="figma"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+
+                    <div class="info">
+                        <p>HTML</p>
+                        <p>85%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="html"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+
+                    <div class="info">
+                        <p>CSS</p>
+                        <p>80%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="CSS"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+
+                    <div class="info">
+                        <p>Pyhton</p>
+                        <p>60%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="pyhton"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+
+                    <div class="info">
+                        <p>R</p>
+                        <p>40%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="r"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+
+                    <div class="info">
+                        <p>Javascript</p>
+                        <p>40%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="js"></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="skill-right scroll-scale">
+                <h3>Professional Skills</h3>
+                <div class="professional">
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="90"></div>
+                        <div class="text">
+                            <big>90%</big>
+                            <small>Team Work</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="70"></div>
+                        <div class="text">
+                            <big>70%</big>
+                            <small>Creativity</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="70"></div>
+                        <div class="text">
+                            <big>70%</big>
+                            <small>Project Management</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="80"></div>
+                        <div class="text">
+                            <big>80%</big>
+                            <small>Comunication</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- portofolio section -->
+    <section class="portofolio" id="portofolio">
+        <div class="main-text scroll-scale">
+            <span>What i will do for you</span>
+            <h2>Latest Project</h2>
+        </div>
+        <div class="container">
+            <div class="fillter-buttons scroll-scale">
+                <button class="button" data-filter="all">All</button>
+                <button class="button" data-filter=".Design">Web Design</button>
+                <button class="button" data-filter=".AI">AI</button>
+                <button class="button" data-filter=".Web">Web Dev</button>
+            </div>
+
+            <div class="portofolio-gallery scroll-bottom">
+                <div class="port-box mix Design">
+                    <div class="port-image">
+                        <img src="img/laundry.PNG" alt="">
+                    </div>
+
+                    <div class="port-content">
+                        <h3>Laundry Ertiga</h3>
+                        <p>
+                            Landing Page for Laundry Business with Various Information.
+                        </p>
+                        <a href="http://laundryertiga.my.id/"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix AI">
+                    <div class="port-image">
+                        <img src="img/berat.jpg" alt="">
+                    </div>
+
+                    <div class="port-content">
+                        <h3>Weight Prediction</h3>
+                        <p>
+                            Predict Someone's Ideal Weight Based on Their Height
+                        </p>
+                        <a href="https://github.com/khairulr36/Weight-Prediction"><i
+                                class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix AI">
+                    <div class="port-image">
+                        <img src="img/diabet.png" alt="">
+                    </div>
+
+                    <div class="port-content">
+                        <h3>Diabetes Detection</h3>
+                        <p>
+                            Classification of a person's diabetes with retrieved data
+                        </p>
+                        <a href="#portofolio"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix AI">
+                    <div class="port-image">
+                        <img src="img/sabuk.png" alt="">
+                    </div>
+
+                    <div class="port-content">
+                        <h3>Seat Belt Detection</h3>
+                        <p>
+                            Car Driver Seat Belt Detection with IP Camera Installed in the Cabin.
+                        </p>
+                        <a href="#portofolio"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix Web">
+                    <div class="port-image">
+                        <img src="img/seru.png" alt="">
+                    </div>
+
+                    <div class="port-content">
+                        <h3>Coming Soon!</h3>
+                        <p>
+                            Yogyakarta Presidential Palace Guest Book for Incoming Guests.
+                        </p>
+                        <a href="#portofolio"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact" class="contact">
+        <div class="main-text scroll-scale">
+            <span>ask me question</span>
+            <h2>Contact Me</h2><br>
+        </div>
+
+        <form class="scroll-bottom">
+            <div class="cenn" style="text-align: justify; color: #fdfdfd;
+            font-size: 1rem;
+            font-weight: 200;
+            letter-spacing: 2px;">
+                <li><label style="color: #12f7ff;"><i class='bx bxl-whatsapp'
+                            style="font-size: 1.5rem; vertical-align: middle;"></i>
+                        WhatsApp</label> - <a href="wa.me/+6282237386371" style="color: #fdfdfd">082237386371</a>
+                </li>
+                <li><label style="color: #12f7ff;"><i class='bx bx-envelope'
+                            style="font-size: 1.5rem; vertical-align: middle;"></i> Email</label> - <a
+                        href=" mailto:khairulr36@gmail.com" style="color: #fdfdfd">khairulr36@gmail.com</a>
+                </li>
+                <li><label style="color: #12f7ff;"><i class='bx bxl-instagram'
+                            style="font-size: 1.5rem; vertical-align: middle;"></i> Instagram</label> - <a
+                        href="https://www.instagram.com/khairulr36/" style="color: #fdfdfd">@khairulr36</a>
+                </li>
+            </div>
+            <!-- <br>
+            <input type="text" id="nama" name="nama" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <div class="btn-box formBtn">
+                <button onclick="sendMail()" type="button" id="load" class="btn">Send Message</button>
+            </div>
+        </form> -->
+    </section>
+
+    <footer>
+        <p class="scroll-scale">Copyright &copy; 2023 by Khairul Rohman</p>
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </footer>
 
 
-  <!-- <footer>
-    <footer class="footerCopy fw-semibold">&copy; Copyright 2023 Khairul</footer>
-  </footer> -->
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="mixitup.min.js"></script>
+    <script src="script.min.js"></script>
 </body>
 
 </html>
